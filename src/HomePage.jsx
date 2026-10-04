@@ -3,8 +3,8 @@ import React from 'react'
 
 const HomePage = () => {
   return (
-    <div className='relative px-10 pt-12 text-black'>
-      <div className='space-y-2'>
+    <div id='home' className='relative px-10 pt-24 text-black'>
+      <div className='space-y-2'> 
         <p>HI , I'M</p> 
         <div>
          <p className='text-6xl font-bold leading-none'>FRONTEND</p>
@@ -48,7 +48,7 @@ const HomePage = () => {
         </div>
       </div>
 
-      <div className='absolute right-16 top-10 border-l border-gray-400 pl-4'>
+      <div className='absolute right-16 top-24 border-l border-gray-400 pl-4'>
        <p className='text-[10px] tracking-[0.2em] text-gray-500 font-semibold mb-3'>
         TECH STACK
        </p>
@@ -60,7 +60,7 @@ const HomePage = () => {
        </div> 
      </div>
 
-     <div className='absolute right-10 top-52 text-[7rem] font-extrabold leading-[0.85] text-gray-200 tracking-tight text-right pointer-events-none'>
+     <div className='absolute right-10 top-68 text-[7rem] font-extrabold leading-[0.85] text-gray-200 tracking-tight text-right pointer-events-none'>
       <p>SAKSHI</p>
       <p>KIROLA</p>
      </div>
