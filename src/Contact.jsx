@@ -33,7 +33,7 @@ const Contact = () => {
         >
          linkedin.com/in/sakshi-kirola 
         </a> 
-        </div>
+        </div> 
 
         <div className='flex items-center gap-4'>
         <FaGithub size={15} />
