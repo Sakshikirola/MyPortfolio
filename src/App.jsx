@@ -4,6 +4,7 @@ import HomePage from './HomePage'
 import About from './About'
 import Skills from './Skills'
 import Contact from './Contact'
+import Projects from './Projects'
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <HomePage/> 
       <About/>
       <Skills/>
+      <Projects/> 
       <Contact/>
     </div>
   )

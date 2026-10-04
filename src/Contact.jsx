@@ -1,10 +1,11 @@
 import { ArrowRight } from 'lucide-react'
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa'
 import React from 'react'
-
-const Contact = () => {
-  return (
+ 
+const Contact = () => {  
+  return (  
     <div id='contact' className='relative px-10 pt-34 text-black h-screen'>
-      <div className='space-y-2'>
+      <div className='space-y-2'>  
        <p className='tracking-widest text-xs font-semibold'>GET IN TOUCH</p>
        <p className='text-5xl font-bold leading-none'>Let's build</p>
        <p className='text-5xl font-bold leading-none'>something together.</p>
@@ -15,19 +16,34 @@ const Contact = () => {
         <p>projects. Feel free to reach out -</p>
        </div>
 
-       <div className='text-xs pt-4'> 
-          <div className='flex gap-16'>
-            <p className='text-gray-500 font-semibold'>EMAIL</p>
-            <p>kirolasakshi@gmail.com</p>
-          </div>
-          <div className='flex gap-11 mt-1'>
-            <p className='text-gray-500 font-semibold'>LINKEDIN</p>
-            <p>linkedin.com/in/sakshi-kirola</p>
-          </div>
-          <div className='flex gap-14 mt-1'>
-            <p className='text-gray-500 font-semibold'>GITHUB</p>
-            <p>github.com/Sakshikirola</p> 
-          </div>
+       <div className='text-xs pt-4 space-y-2'>
+        <div className='flex items-center gap-4'>
+        <FaEnvelope size={15} />
+        <p className='text-gray-500 font-semibold w-16'>EMAIL</p>
+        <a href='mailto:kirolasakshi@gmail.com' className='hover:underline cursor-pointer'>
+          kirolasakshi@gmail.com
+        </a>
+        </div>
+
+        <div className='flex items-center gap-4'>
+        <FaLinkedin size={15} />
+        <p className='text-gray-500 font-semibold w-16'>LINKEDIN</p>
+        <a href='https://www.linkedin.com/in/sakshi-kirola-24797232b' target='_blank' rel='noopener noreferrer'
+         className='hover:underline cursor-pointer'
+        >
+         linkedin.com/in/sakshi-kirola 
+        </a> 
+        </div>
+
+        <div className='flex items-center gap-4'>
+        <FaGithub size={15} />
+        <p className='text-gray-500 font-semibold w-16'>GITHUB</p>
+        <a href='https://github.com/Sakshikirola' target='_blank' rel='noopener noreferrer'
+         className='hover:underline cursor-pointer'
+        >
+         github.com/Sakshikirola
+        </a>
+        </div>
        </div>
 
        <button className='bg-black px-6 py-2 tracking-widest mt-4 font-bold text-white text-xs rounded-2xl flex items-center gap-3'>
