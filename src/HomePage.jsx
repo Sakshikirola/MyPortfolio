@@ -5,11 +5,9 @@ const HomePage = () => {
   return (
     <div id='home' className='relative px-10 pt-24 text-black'>
       <div className='space-y-2'> 
-        <p>HI , I'M</p> 
-        <div>
-         <p className='text-6xl font-bold leading-none'>FRONTEND</p>
-         <p className='text-6xl font-bold leading-none'>DEVELOPER</p>
-        </div> 
+        <p className='tracking-widest text-xs font-semibold'>HI , I'M</p> 
+        <p className='text-6xl font-bold leading-none'>FRONTEND</p>
+        <p className='text-6xl font-bold leading-none'>DEVELOPER</p>
 
         <div className='h-px w-6 bg-black mt-4'></div> 
 
