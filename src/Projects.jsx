@@ -6,7 +6,7 @@ const Projects = () => {
     <div id='projects' className='relative px-10 pt-18 text-black h-screen'>
       <div className='space-y-2'>
        <p className='tracking-widest text-xs font-semibold'>PROJECTS</p>
-       <p className='text-4xl font-bold leading-none'>Selected Work</p>
+       <p className='text-4xl font-bold leading-none'>Selected Work</p> 
        <div className='h-0.5 w-8 bg-black mt-4'></div> 
       </div>
 
@@ -22,9 +22,11 @@ const Projects = () => {
           <p className='px-4 py-2 font-bold border border-black text-xs rounded-2xl cursor-pointer hover:bg-black hover:text-white'>Express.js</p>
           <p className='px-4 py-2 font-bold border border-black text-xs rounded-2xl cursor-pointer hover:bg-black hover:text-white'>Supabase</p>
           <p className='px-4 py-2 font-bold border border-black text-xs rounded-2xl cursor-pointer hover:bg-black hover:text-white'>Gemini API</p>
+          <p className='px-4 py-2 font-bold border border-black text-xs rounded-2xl cursor-pointer hover:bg-black hover:text-white'>Vercel</p>
+                    <p className='px-4 py-2 font-bold border border-black text-xs rounded-2xl cursor-pointer hover:bg-black hover:text-white'>Render</p>
          </div>
 
-         <div className='flex items-center gap-6 mt-15'>
+         <div className='flex items-center gap-6 mt-4'>
           <a href='https://prep-wise-ai-beta-lyart.vercel.app/' target='_blank' rel='noopener noreferrer'
             className='text-xs font-bold flex items-center gap-2 text-black hover:underline'
           >
@@ -42,11 +44,59 @@ const Projects = () => {
         </div>
 
         <div className='w-[32%] h-90 border-black border rounded-xl p-4'>
+         <p className='text-gray-500 text-xs font-semibold'>Travel Website</p>
+         <p className='text-xl font-bold leading-none mt-2'>IndiaXplore</p>
+         <p className='mt-2 text-sm text-gray-800'>IndiaXplore is a responsive travel website built with React.js and Tailwind CSS, focused on clean UI/UX and smooth navigation.</p>
 
+         <div className='mt-17 flex flex-wrap gap-2'>
+          <p className='px-4 py-2 font-bold border border-black text-xs rounded-2xl cursor-pointer hover:bg-black hover:text-white'>React.js</p>
+          <p className='px-4 py-2 font-bold border border-black text-xs rounded-2xl cursor-pointer hover:bg-black hover:text-white'>Tailwind CSS</p>
+          <p className='px-4 py-2 font-bold border border-black text-xs rounded-2xl cursor-pointer hover:bg-black hover:text-white'>Vercel</p>
+         </div>
+
+         <div className='flex items-center gap-6 mt-24'>
+          <a href='https://india-xplore.vercel.app/' target='_blank' rel='noopener noreferrer'
+            className='text-xs font-bold flex items-center gap-2 text-black hover:underline'
+          >
+           VIEW LIVE
+           <ArrowRight size={13} />
+          </a>
+
+          <a href='https://github.com/Sakshikirola/IndiaXplore' target='_blank' rel='noopener noreferrer'
+           className='text-xs font-bold flex items-center gap-2 text-gray-500 hover:text-black'
+          >
+           GITHUB 
+           <ArrowRight size={13} />
+          </a>
+         </div>
         </div>
 
         <div className='w-[32%] h-90 border-black border rounded-xl p-4'>
+          <p className='text-gray-500 text-xs font-semibold'>Dashboard</p>
+         <p className='text-xl font-bold leading-none mt-2'>Employee Management</p>
+         <p className='mt-2 text-sm text-gray-800'>A responsive React dashboard for managing employees and tasks with dynamic status cards and a clean, interactive UI.</p>
 
+         <div className='mt-17 flex flex-wrap gap-2'>
+          <p className='px-4 py-2 font-bold border border-black text-xs rounded-2xl cursor-pointer hover:bg-black hover:text-white'>React.js</p>
+          <p className='px-4 py-2 font-bold border border-black text-xs rounded-2xl cursor-pointer hover:bg-black hover:text-white'>Tailwind CSS</p>
+          <p className='px-4 py-2 font-bold border border-black text-xs rounded-2xl cursor-pointer hover:bg-black hover:text-white'>Vercel</p>
+         </div>
+
+         <div className='flex items-center gap-6 mt-24'>
+          <a href='https://ems-project-swart.vercel.app/' target='_blank' rel='noopener noreferrer'
+            className='text-xs font-bold flex items-center gap-2 text-black hover:underline'
+          >
+           VIEW LIVE
+           <ArrowRight size={13} />
+          </a>
+
+          <a href='https://github.com/Sakshikirola/EMS-Project' target='_blank' rel='noopener noreferrer'
+           className='text-xs font-bold flex items-center gap-2 text-gray-500 hover:text-black'
+          >
+           GITHUB 
+           <ArrowRight size={13} />
+          </a>
+         </div>
         </div>
       </div>
 
