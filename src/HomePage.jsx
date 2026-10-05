@@ -17,15 +17,20 @@ const HomePage = () => {
         </div>
 
         <div className='flex gap-5 pt-3'>
-         <button className='bg-black px-6 py-2 font-bold text-white text-xs rounded-2xl flex items-center gap-3'>
+         <a href="#projects"
+          className='bg-black px-6 py-2 font-bold text-white text-xs rounded-2xl flex items-center gap-3'
+         >
           VIEW MY WORK
           <ArrowRight size={15} />
-         </button>
-         <button className='px-6 py-2 font-bold text-xs rounded-2xl flex items-center gap-3 border-black border'>
+         </a>
+
+         <a href="/resume.pdf" target="_blank" rel="noopener noreferrer"
+          className='px-6 py-2 font-bold text-xs rounded-2xl flex items-center gap-3 border-black border'
+         >
           VIEW RESUME
-          <ArrowDown size={15}/>
-         </button>
-        </div>
+          <ArrowDown size={15} />  
+         </a> 
+        </div> 
 
         <div className='flex gap-12 pt-3 text-xs font-bold'>
           <div className='pr-12 border-r border-gray-400'>
@@ -78,9 +83,6 @@ const HomePage = () => {
      </div>
 
     </div>
-
-    
-
 
   )
 }
