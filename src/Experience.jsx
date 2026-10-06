@@ -7,23 +7,23 @@ const Experience = () => {
       <div className='space-y-2'>
         <p className='tracking-widest text-xs font-semibold'>EXPERIENCE</p> 
         <p className='text-4xl font-bold leading-none'>Where, I've worked</p>
-        <div className='h-1 w-8 bg-black mt-4'></div>
+        <div className='h-1 w-8 bg-black mt-4'></div> 
 
         <div>
-         <p className='text-2xl font-semibold leading-none mt-10'>AI DATA ANNOTATION</p>
+         <p className='text-2xl font-semibold leading-none mt-10'>AI DATA ANNOTATION INTERN</p>
          <p className='text-lg leading-none mt-1'>Cogito Tech - Internship</p>
          <p className='text-md text-gray-500 mt-1'>June 2026 - July 2026</p>
          <p className='mt-1 w-[45%] text-sm'>Analyzed and annotated 2D images according to project-specific guidelines to create accurate, structured datasets for AI and machine learning applications. Reviewed image data carefully, identified relevant objects and features, and maintained consistency and quality throughout the annotation process.</p>
 
          <div className='flex gap-5 pt-5'>
-         <a href="#projects"
+         <a href="/Certificate.png"
           className='bg-black px-6 py-2 font-bold text-white text-xs rounded-2xl flex items-center gap-3'
          >
           CERTIFICATE
           <ArrowRight size={15} />
          </a>
 
-         <a href="/resume.pdf" target="_blank" rel="noopener noreferrer"
+         <a href="/OfferLetter.png" target="_blank" rel="noopener noreferrer"
           className='px-6 py-2 font-bold text-xs rounded-2xl flex items-center gap-3 border-black border'
          >
           OFFER LETTER
