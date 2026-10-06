@@ -20,7 +20,9 @@ const HomePage = () => {
     <div id='home' className='relative px-10 pt-24 text-black'>
       <motion.div className='space-y-2'  
       variants={containerVariants} 
-      initial='hidden' animate='visible'>  
+      initial='hidden' whileInView='visible' 
+      viewport={{ once: false, amount: 0.25 }}
+      >  
         <motion.p variants={itemVariants} className='tracking-widest text-xs font-semibold'>HI , I'M</motion.p> 
         <motion.p variants={itemVariants} className='text-6xl font-bold leading-none'>FRONTEND</motion.p>
         <motion.p variants={itemVariants} className='text-6xl font-bold leading-none'>DEVELOPER</motion.p>
@@ -73,7 +75,8 @@ const HomePage = () => {
 
       <motion.div 
       initial={{ opacity: 0, y: 18 }} 
-      animate={{ opacity: 1, y: 0 }} 
+      whileInView={{ opacity: 1, y: 0 }} 
+      viewport={{ once: false, amount: 0.25 }}
       transition={{ duration: 0.6, delay: 0.5, ease: 'easeOut' }}
       className='absolute right-16 top-24 border-l border-gray-400 pl-4'>
        <p className='text-[10px] tracking-[0.2em] text-gray-500 font-semibold mb-3'>
@@ -89,7 +92,8 @@ const HomePage = () => {
 
      <motion.div 
      initial={{ opacity: 0, x: 24 }} 
-     animate={{ opacity: 1, x: 0 }} 
+     whileInView={{ opacity: 1, x: 0 }} 
+     viewport={{ once: false, amount: 0.25 }}
      transition={{ duration: 1, delay: 0.2 }}
      className='absolute right-10 top-68 text-[7rem] font-extrabold leading-[0.85] text-gray-200 tracking-tight text-right pointer-events-none'
      >
@@ -99,7 +103,8 @@ const HomePage = () => {
 
      <motion.div 
        initial={{ opacity: 0 }} 
-       animate={{ opacity: 1 }} 
+       whileInView={{ opacity: 1 }} 
+       viewport={{ once: false }}
        transition={{ duration: 0.8, delay: 1.1 }} 
        className='relative mt-10 pt-4 border-t border-gray-200'>
        <p className='absolute left-1/2 -translate-x-1/2 -top-2 bg-white px-3 text-[9px] tracking-[0.3em] font-semibold text-gray-400'>

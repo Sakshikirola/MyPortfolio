@@ -47,7 +47,7 @@ const Skills = () => {
         variants={containerVariants}
         initial='hidden'
         whileInView='visible'
-        viewport={{ once: true, amount: 0.3 }}
+        viewport={{ once: false, amount: 0.3 }}
       >
        <motion.p variants={headingVariants} className='tracking-widest text-xs font-semibold'>SKILLS</motion.p>
        <motion.p variants={headingVariants} className='text-4xl font-bold leading-none'>Tools I Work With</motion.p>
@@ -106,7 +106,7 @@ const Skills = () => {
       <motion.div
         initial={{ opacity: 0, x: 24 }}
         whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true }}
+        viewport={{ once: false }}
         transition={{ duration: 1, delay: 0.2 }}
         className='absolute right-16 top-64 border-l border-gray-400 pl-4'
       >

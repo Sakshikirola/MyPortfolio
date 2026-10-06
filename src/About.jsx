@@ -22,7 +22,8 @@ const About = () => {
         className='space-y-2'
         variants={containerVariants}
         initial='hidden'
-        animate='visible'
+        whileInView='visible'
+        viewport={{ once: false, amount: 0.25 }}
       >
         <motion.p variants={itemVariants} className='tracking-widest text-xs font-semibold'>ABOUT ME</motion.p>
 
@@ -57,16 +58,18 @@ const About = () => {
 
       <motion.div
         initial={{ opacity: 0, x: 24 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1, delay: 0.3 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: false, amount: 0.25 }}
+        transition={{duration: 1, delay: 0.2, ease: 'easeOut',}}
         className='absolute right-10 top-50 text-[7rem] font-extrabold leading-[0.85] text-gray-200 tracking-tight text-right pointer-events-none'
-      >
+      > 
         <p>ABOUT</p>
       </motion.div>
 
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
+        viewport={{ once: false }}
         transition={{ duration: 0.8, delay: 1.1 }}
         className='absolute bottom-6 left-10 right-10 border-t border-gray-200 pt-4'
       >
