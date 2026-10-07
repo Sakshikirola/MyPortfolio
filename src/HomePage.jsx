@@ -17,35 +17,35 @@ const itemVariants = {
 
 const HomePage = () => {
   return (
-    <div id='home' className='relative px-10 pt-24 text-black'>
+    <div id='home' className='relative px-5 sm:px-10 pt-24 text-black overflow-hidden'>
       <motion.div className='space-y-2'  
       variants={containerVariants} 
       initial='hidden' whileInView='visible' 
       viewport={{ once: false, amount: 0.25 }}
       >  
         <motion.p variants={itemVariants} className='tracking-widest text-xs font-semibold'>HI , I'M</motion.p> 
-        <motion.p variants={itemVariants} className='text-6xl font-bold leading-none'>FRONTEND</motion.p>
-        <motion.p variants={itemVariants} className='text-6xl font-bold leading-none'>DEVELOPER</motion.p>
+        <motion.p variants={itemVariants} className='text-4xl sm:text-5xl md:text-6xl font-bold leading-none'>FRONTEND</motion.p>
+        <motion.p variants={itemVariants} className='text-4xl sm:text-5xl md:text-6xl font-bold leading-none'>DEVELOPER</motion.p>
 
         <motion.div variants={itemVariants} className='h-px w-6 bg-black mt-4'></motion.div> 
 
-        <motion.div variants={itemVariants} className='mt-4'>
+        <motion.div variants={itemVariants} className='mt-4 text-sm sm:text-base'>
          <p>Frontend developer focused on building clean, interactive web</p>
          <p>experiences with react and modern frontend technologies.</p> 
         </motion.div>
 
         <motion.div 
         variants={itemVariants} 
-        className='flex gap-5 pt-3'>
+        className='flex flex-col sm:flex-row gap-3 sm:gap-5 pt-3'>
          <motion.a href="#projects" whileHover={{ y: -2, opacity: 0.85 }} whileTap={{ scale: 0.97 }} transition={{ duration: 0.2 }}
-         className='bg-black px-6 py-2 font-bold text-white text-xs rounded-2xl flex items-center gap-3'
+         className='bg-black px-6 py-2 font-bold text-white text-xs rounded-2xl flex items-center justify-center gap-3 w-fit'
          >
           VIEW MY WORK
           <ArrowRight size={15} />
          </motion.a> 
 
          <motion.a href="/resume.pdf" whileHover={{ y: -2, opacity: 0.85 }} whileTap={{ scale: 0.97 }} transition={{ duration: 0.2 }} target="_blank" rel="noopener noreferrer"
-          className='px-6 py-2 font-bold text-xs rounded-2xl flex items-center gap-3 border-black border'
+          className='px-6 py-2 font-bold text-xs rounded-2xl flex items-center justify-center gap-3 border-black border w-fit'
          >
           VIEW RESUME
           <ArrowDown size={15} />  
@@ -54,13 +54,13 @@ const HomePage = () => {
 
         <motion.div 
         variants={itemVariants} 
-        className='flex gap-12 pt-3 text-xs font-bold'>
-          <div className='pr-12 border-r border-gray-400'>
+        className='flex flex-wrap gap-6 sm:gap-12 pt-3 text-xs font-bold'>
+          <div className='pr-6 sm:pr-12 border-r border-gray-400'>
             <p>CLEAN CODE</p>
             <p className='text-gray-500'>STRUCTURED &</p>
             <p className='text-gray-500'>READABLE</p>
           </div>
-          <div className='pr-12 border-r border-gray-400'>
+          <div className='pr-6 sm:pr-12 border-r border-gray-400'>
             <p>RESPONSIVE</p>
             <p className='text-gray-500'>EVERY SCREEN</p>
             <p className='text-gray-500'>SIZE</p>
@@ -78,7 +78,7 @@ const HomePage = () => {
       whileInView={{ opacity: 1, y: 0 }} 
       viewport={{ once: false, amount: 0.25 }}
       transition={{ duration: 0.6, delay: 0.5, ease: 'easeOut' }}
-      className='absolute right-16 top-24 border-l border-gray-400 pl-4'>
+      className='hidden lg:block absolute right-16 top-24 border-l border-gray-400 pl-4'>
        <p className='text-[10px] tracking-[0.2em] text-gray-500 font-semibold mb-3'>
         TECH STACK
        </p>
@@ -95,7 +95,7 @@ const HomePage = () => {
      whileInView={{ opacity: 1, x: 0 }} 
      viewport={{ once: false, amount: 0.25 }}
      transition={{ duration: 1, delay: 0.2 }}
-     className='absolute right-10 top-68 text-[7rem] font-extrabold leading-[0.85] text-gray-200 tracking-tight text-right pointer-events-none'
+     className='hidden sm:block absolute right-4 sm:right-10 top-52 sm:top-60 lg:top-68 text-4xl sm:text-6xl lg:text-[7rem] font-extrabold leading-[0.85] text-gray-200 tracking-tight text-right pointer-events-none'
      >
      <p>SAKSHI</p>
      <p>KIROLA</p>
