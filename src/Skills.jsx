@@ -33,7 +33,7 @@ const SkillPill = ({ children }) => (
   <motion.p
     variants={pillVariants}
     whileHover={{ y: -2 }}
-    className='px-6 py-2 font-bold border border-black text-xs rounded-2xl cursor-pointer hover:bg-black hover:text-white'
+    className='px-4 sm:px-6 py-2 font-bold border border-black text-xs rounded-2xl cursor-pointer hover:bg-black hover:text-white'
   >
     {children}
   </motion.p>
@@ -41,7 +41,7 @@ const SkillPill = ({ children }) => (
 
 const Skills = () => {
   return (
-    <div id='skills' className='relative px-10 pt-18 text-black h-screen'>
+    <div id='skills' className='relative px-5 sm:px-10 pt-18 text-black min-h-screen overflow-hidden'>
       <motion.div
         className='space-y-2'
         variants={containerVariants}
@@ -50,13 +50,13 @@ const Skills = () => {
         viewport={{ once: false, amount: 0.3 }}
       >
        <motion.p variants={headingVariants} className='tracking-widest text-xs font-semibold'>SKILLS</motion.p>
-       <motion.p variants={headingVariants} className='text-4xl font-bold leading-none'>Tools I Work With</motion.p>
+       <motion.p variants={headingVariants} className='text-3xl sm:text-4xl font-bold leading-none'>Tools I Work With</motion.p>
        <motion.div variants={headingVariants} className='h-0.5 w-6 bg-black mt-4'></motion.div>
 
        <div className='mt-8'>
         <motion.div variants={categoryVariants}>
          <p className='text-gray-500 font-semibold text-sm'>FRONTEND</p>
-         <div className='flex mt-2 gap-4'>
+         <div className='flex flex-wrap mt-2 gap-2 sm:gap-4'>
           <SkillPill>HTML</SkillPill>
           <SkillPill>CSS</SkillPill>
           <SkillPill>Javascript</SkillPill>
@@ -66,34 +66,34 @@ const Skills = () => {
          </div>
         </motion.div>
 
-        <motion.div variants={categoryVariants} className='mt-2'>
+        <motion.div variants={categoryVariants} className='mt-4 sm:mt-2'>
          <p className='text-gray-500 font-semibold text-sm'>DATABASE</p>
-         <div className='flex mt-2 gap-4'>
+         <div className='flex flex-wrap mt-2 gap-2 sm:gap-4'>
           <SkillPill>Supabase</SkillPill>
           <SkillPill>PostgreSQL</SkillPill>
          </div>
         </motion.div>
 
-        <motion.div variants={categoryVariants} className='mt-2'>
+        <motion.div variants={categoryVariants} className='mt-4 sm:mt-2'>
          <p className='text-gray-500 font-semibold text-sm'>PROGRAMMING</p>
-         <div className='flex mt-2 gap-4'>
+         <div className='flex flex-wrap mt-2 gap-2 sm:gap-4'>
           <SkillPill>C</SkillPill>
           <SkillPill>C++</SkillPill>
           <SkillPill>DSA</SkillPill>
          </div>
         </motion.div>
 
-        <motion.div variants={categoryVariants} className='mt-2'>
+        <motion.div variants={categoryVariants} className='mt-4 sm:mt-2'>
            <p className='text-gray-500 font-semibold text-sm'>DATA & ANALYTICS</p>
-            <div className='flex mt-2 gap-4'>
+            <div className='flex flex-wrap mt-2 gap-2 sm:gap-4'>
              <SkillPill>Excel</SkillPill>
              <SkillPill>PowerBI</SkillPill>
             </div>
         </motion.div>
 
-        <motion.div variants={categoryVariants} className='mt-2'>
+        <motion.div variants={categoryVariants} className='mt-4 sm:mt-2'>
            <p className='text-gray-500 font-semibold text-sm'>TOOLS</p>
-            <div className='flex mt-2 gap-4'>
+            <div className='flex flex-wrap mt-2 gap-2 sm:gap-4'>
              <SkillPill>Git</SkillPill>
              <SkillPill>Github</SkillPill>
              <SkillPill>VS Code</SkillPill>
@@ -108,7 +108,7 @@ const Skills = () => {
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: false }}
         transition={{ duration: 1, delay: 0.2 }}
-        className='absolute right-16 top-64 border-l border-gray-400 pl-4'
+        className='relative mt-10 sm:mt-0 sm:absolute right-auto sm:right-16 top-auto sm:top-64 border-l border-gray-400 pl-4'
       >
        <p className='text-[10px] tracking-[0.2em] text-gray-500 font-semibold mb-3'>
         WHAT I BUILD
@@ -121,7 +121,7 @@ const Skills = () => {
        </div>
      </motion.div>
 
-     <div className='absolute bottom-4 left-10 right-10 border-t border-gray-200 pt-4'>
+     <div className='relative sm:absolute bottom-auto sm:bottom-4 left-5 right-5 sm:left-10 sm:right-10 border-t border-gray-200 pt-4 mt-10 sm:mt-0'>
       <p className='absolute left-1/2 -translate-x-1/2 -top-2 bg-white px-3 text-[9px] tracking-[0.3em] font-semibold text-gray-400'>
         BUILD / LEARN / GROW
       </p>

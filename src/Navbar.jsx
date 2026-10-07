@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,12 +14,12 @@ const Navbar = () => {
       </div>
 
       <div className='hidden md:flex gap-10 items-center font-semibold'>
-        <a href='#home' className='text-xs text-gray-500'>HOME</a>
-        <a href='#about' className='text-xs text-gray-500'>ABOUT</a>
-        <a href='#skills' className='text-xs text-gray-500'>SKILLS</a>
-        <a href='#experience' className='text-xs text-gray-500'>EXPERIENCE</a>
-        <a href='#projects' className='text-xs text-gray-500'>PROJECTS</a>
-        <a href='#contact' className='text-xs text-gray-500'>CONTACT</a>
+        <Link to='/' className='text-xs text-gray-500'>HOME</Link>
+        <Link to='/about' className='text-xs text-gray-500'>ABOUT</Link>
+        <Link to='/skills' className='text-xs text-gray-500'>SKILLS</Link>
+        <Link to='/experience' className='text-xs text-gray-500'>EXPERIENCE</Link>
+        <Link to='/projects' className='text-xs text-gray-500'>PROJECTS</Link>
+        <Link to='/contact' className='text-xs text-gray-500'>CONTACT</Link>
         <button className='h-3 w-3 p-0 border-0 rounded-full bg-black'></button>
       </div>
 
@@ -36,12 +37,12 @@ const Navbar = () => {
             className='md:hidden fixed top-14 left-0 w-full bg-white border-t border-gray-200 overflow-hidden'
           >
             <div className='flex flex-col px-5 py-4 gap-4 font-semibold'>
-              <a href='#home' onClick={() => setIsOpen(false)} className='text-xs text-gray-500'>HOME</a>
-              <a href='#about' onClick={() => setIsOpen(false)} className='text-xs text-gray-500'>ABOUT</a>
-              <a href='#skills' onClick={() => setIsOpen(false)} className='text-xs text-gray-500'>SKILLS</a>
-              <a href='#experience' onClick={() => setIsOpen(false)} className='text-xs text-gray-500'>EXPERIENCE</a>
-              <a href='#projects' onClick={() => setIsOpen(false)} className='text-xs text-gray-500'>PROJECTS</a>
-              <a href='#contact' onClick={() => setIsOpen(false)} className='text-xs text-gray-500'>CONTACT</a>
+              <Link to='/' onClick={() => setIsOpen(false)} className='text-xs text-gray-500'>HOME</Link>
+              <Link to='/about' onClick={() => setIsOpen(false)} className='text-xs text-gray-500'>ABOUT</Link>
+              <Link to='/skills' onClick={() => setIsOpen(false)} className='text-xs text-gray-500'>SKILLS</Link>
+              <Link to='/experience' onClick={() => setIsOpen(false)} className='text-xs text-gray-500'>EXPERIENCE</Link>
+              <Link to='/projects' onClick={() => setIsOpen(false)} className='text-xs text-gray-500'>PROJECTS</Link>
+              <Link to='/contact' onClick={() => setIsOpen(false)} className='text-xs text-gray-500'>CONTACT</Link>
             </div>
           </motion.div>
         )}

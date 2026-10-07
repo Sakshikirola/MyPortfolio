@@ -24,7 +24,7 @@ const itemVariants = {
 
 const Projects = () => {
   return (
-    <div id='projects' className='relative px-10 pt-18 text-black h-screen'>
+    <div id='projects' className='relative px-5 sm:px-10 pt-18 text-black min-h-screen overflow-hidden'>
       <motion.div className='space-y-2'
         variants={containerVariants}
         initial='hidden'
@@ -32,17 +32,17 @@ const Projects = () => {
         viewport={{ once: false, amount: 0.25 }}
       >
        <motion.p variants={itemVariants} className='tracking-widest text-xs font-semibold'>PROJECTS</motion.p>
-       <motion.p variants={itemVariants} className='text-4xl font-bold leading-none'>Selected Work</motion.p> 
+       <motion.p variants={itemVariants} className='text-3xl sm:text-4xl font-bold leading-none'>Selected Work</motion.p> 
        <motion.div variants={itemVariants} className='h-0.5 w-8 bg-black mt-4'></motion.div> 
       </motion.div>
 
-      <motion.div className='flex items-center justify-between mt-4 gap-2'
+      <motion.div className='flex flex-col sm:flex-row items-center justify-between mt-4 gap-5 sm:gap-2'
         variants={containerVariants}
         initial='hidden'
         whileInView='visible'
         viewport={{ once: false, amount: 0.2 }}
       >
-        <motion.div variants={itemVariants} className='w-[32%] h-90 border-black border rounded-xl p-4'>
+        <motion.div variants={itemVariants} className='w-full sm:w-[32%] h-auto sm:h-90 border-black border rounded-xl p-4'>
          <p className='text-gray-500 text-xs font-semibold'>AI-POWERED WEB APP</p> 
          <p className='text-xl font-bold leading-none mt-2'>PrepWise AI</p> 
          <p className='mt-2 text-sm text-gray-800'>PrepWise AI is an AI-powered interview preparation platform where users can practice different types of interviews with dynamically generated questions. It provides AI-based scoring, feedback, strengths, and areas for improvement, while saving past interview results for future review.</p> 
@@ -57,7 +57,7 @@ const Projects = () => {
                     <p className='px-4 py-2 font-bold border border-black text-xs rounded-2xl cursor-pointer hover:bg-black hover:text-white'>Render</p>
          </div>
 
-         <div className='flex items-center gap-6 mt-4'>
+         <div className='flex items-center gap-6 mt-14'>
           <motion.a href='https://prep-wise-ai-beta-lyart.vercel.app/' target='_blank' rel='noopener noreferrer'
             whileHover={{ y: -2, opacity: 0.85 }}
             whileTap={{ scale: 0.97 }}
@@ -80,18 +80,18 @@ const Projects = () => {
          </div>
         </motion.div>
 
-        <motion.div variants={itemVariants} className='w-[32%] h-90 border-black border rounded-xl p-4'>
+        <motion.div variants={itemVariants} className='w-full sm:w-[32%] h-auto sm:h-90 border-black border rounded-xl p-4'>
          <p className='text-gray-500 text-xs font-semibold'>Travel Website</p>
          <p className='text-xl font-bold leading-none mt-2'>IndiaXplore</p>
          <p className='mt-2 text-sm text-gray-800'>IndiaXplore is a responsive travel website built with React.js and Tailwind CSS, focused on clean UI/UX and smooth navigation.</p>
 
-         <div className='mt-17 flex flex-wrap gap-2'>
+         <div className='mt-6 sm:mt-17 flex flex-wrap gap-2'>
           <p className='px-4 py-2 font-bold border border-black text-xs rounded-2xl cursor-pointer hover:bg-black hover:text-white'>React.js</p>
           <p className='px-4 py-2 font-bold border border-black text-xs rounded-2xl cursor-pointer hover:bg-black hover:text-white'>Tailwind CSS</p>
           <p className='px-4 py-2 font-bold border border-black text-xs rounded-2xl cursor-pointer hover:bg-black hover:text-white'>Vercel</p>
          </div>
 
-         <div className='flex items-center gap-6 mt-24'>
+         <div className='flex items-center gap-6 mt-6 sm:mt-24'>
           <motion.a href='https://india-xplore.vercel.app/' target='_blank' rel='noopener noreferrer'
             whileHover={{ y: -2, opacity: 0.85 }}
             whileTap={{ scale: 0.97 }}
@@ -114,18 +114,18 @@ const Projects = () => {
          </div>
         </motion.div>
 
-        <motion.div variants={itemVariants} className='w-[32%] h-90 border-black border rounded-xl p-4'>
+        <motion.div variants={itemVariants} className='w-full sm:w-[32%] h-auto sm:h-90 border-black border rounded-xl p-4'>
           <p className='text-gray-500 text-xs font-semibold'>Dashboard</p>
          <p className='text-xl font-bold leading-none mt-2'>Employee Management</p>
          <p className='mt-2 text-sm text-gray-800'>A responsive React dashboard for managing employees and tasks with dynamic status cards and a clean, interactive UI.</p>
 
-         <div className='mt-17 flex flex-wrap gap-2'>
+         <div className='mt-6 sm:mt-17 flex flex-wrap gap-2'>
           <p className='px-4 py-2 font-bold border border-black text-xs rounded-2xl cursor-pointer hover:bg-black hover:text-white'>React.js</p>
           <p className='px-4 py-2 font-bold border border-black text-xs rounded-2xl cursor-pointer hover:bg-black hover:text-white'>Tailwind CSS</p>
           <p className='px-4 py-2 font-bold border border-black text-xs rounded-2xl cursor-pointer hover:bg-black hover:text-white'>Vercel</p>
          </div>
 
-         <div className='flex items-center gap-6 mt-24'>
+         <div className='flex items-center gap-6 mt-6 sm:mt-24'>
           <motion.a href='https://ems-project-swart.vercel.app/' target='_blank' rel='noopener noreferrer'
             whileHover={{ y: -2, opacity: 0.85 }}
             whileTap={{ scale: 0.97 }}
@@ -154,7 +154,7 @@ const Projects = () => {
         whileInView={{ opacity: 1 }}
         viewport={{ once: false }}
         transition={{ duration: 0.8, delay: 0.8 }}
-        className='absolute bottom-4 left-10 right-10 border-t border-gray-200 pt-4'
+        className='relative sm:absolute bottom-auto sm:bottom-4 left-5 right-5 sm:left-10 sm:right-10 border-t border-gray-200 pt-4 mt-10 sm:mt-0'
       >
        <p className='absolute left-1/2 -translate-x-1/2 -top-2 bg-white px-3 text-[9px] tracking-[0.3em] font-semibold text-gray-400'>
         BUILD / LEARN / GROW

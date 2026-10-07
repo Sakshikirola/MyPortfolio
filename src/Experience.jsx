@@ -21,7 +21,7 @@ const itemVariants = {
 
 const Experience = () => {
   return (
-    <div id='experience' className='relative px-10 pt-28 text-black h-screen'>
+    <div id='experience' className='relative px-5 sm:px-10 pt-28 text-black min-h-screen overflow-hidden'>
       <motion.div className='space-y-2'
         variants={containerVariants}
         initial='hidden'
@@ -31,17 +31,17 @@ const Experience = () => {
         <motion.p variants={itemVariants} className='tracking-widest text-xs font-semibold'>
           EXPERIENCE
         </motion.p>
-        <motion.p variants={itemVariants} className='text-4xl font-bold leading-none'
+        <motion.p variants={itemVariants} className='text-3xl sm:text-4xl font-bold leading-none'
         > 
           Where, I've worked
         </motion.p>
         <motion.div variants={itemVariants} className='h-1 w-8 bg-black mt-4'></motion.div>
 
         <motion.div variants={itemVariants}>
-          <p className='text-2xl font-semibold leading-none mt-10'>AI DATA ANNOTATION INTERN</p>
-          <p className='text-lg leading-none mt-1'>Cogito Tech - Internship</p>
-          <p className='text-md text-gray-500 mt-1'>June 2026 - July 2026</p>
-          <p className='mt-1 w-[45%] text-sm'>
+          <p className='text-xl sm:text-2xl font-semibold leading-none mt-10'>AI DATA ANNOTATION INTERN</p>
+          <p className='text-base sm:text-lg leading-none mt-1'>Cogito Tech - Internship</p>
+          <p className='text-sm sm:text-md text-gray-500 mt-1'>June 2026 - July 2026</p>
+          <p className='mt-1 w-full sm:w-[45%] text-sm'>
             Analyzed and annotated 2D images according to project-specific
             guidelines to create accurate, structured datasets for AI and
             machine learning applications. Reviewed image data carefully,
@@ -49,12 +49,12 @@ const Experience = () => {
             consistency and quality throughout the annotation process.
           </p>
 
-          <div className='flex gap-5 pt-5'>
+          <div className='flex flex-wrap gap-3 sm:gap-5 pt-5'>
             <motion.a href='/Certificate.png' target='_blank' rel='noopener noreferrer'
               whileHover={{ y: -2, opacity: 0.85 }}
               whileTap={{ scale: 0.97 }}
               transition={{ duration: 0.2 }}
-              className='bg-black px-6 py-2 font-bold text-white text-xs rounded-2xl flex items-center gap-3'
+              className='bg-black px-5 sm:px-6 py-2 font-bold text-white text-xs rounded-2xl flex items-center gap-3'
             >
               CERTIFICATE
               <ArrowRight size={15} />
@@ -64,7 +64,7 @@ const Experience = () => {
               whileHover={{ y: -2, opacity: 0.85 }}
               whileTap={{ scale: 0.97 }}
               transition={{ duration: 0.2 }}
-              className='px-6 py-2 font-bold text-xs rounded-2xl flex items-center gap-3 border-black border'
+              className='px-5 sm:px-6 py-2 font-bold text-xs rounded-2xl flex items-center gap-3 border-black border'
             >
               OFFER LETTER
               <ArrowDown size={15} />
@@ -78,7 +78,7 @@ const Experience = () => {
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: false, amount: 0.25 }}
         transition={{duration: 1, delay: 0.2, ease: 'easeOut',}}
-        className='absolute right-10 top-40 text-[7rem] font-extrabold leading-[0.85] text-gray-200 tracking-tight text-right pointer-events-none'
+        className='hidden sm:block absolute right-10 top-40 text-5xl sm:text-[7rem] font-extrabold leading-[0.85] text-gray-200 tracking-tight text-right pointer-events-none'
       >
         <p>EXPERIENCE</p>
       </motion.div>
@@ -88,7 +88,7 @@ const Experience = () => {
         whileInView={{ opacity: 1 }}
         viewport={{ once: false }}
         transition={{duration: 0.8,delay: 0.8,}}
-        className='absolute bottom-6 left-10 right-10 border-t border-gray-200 pt-4'
+        className='relative sm:absolute bottom-auto sm:bottom-6 left-5 right-5 sm:left-10 sm:right-10 border-t border-gray-200 pt-4 mt-10 sm:mt-0'
       >
         <p className='absolute left-1/2 -translate-x-1/2 -top-2 bg-white px-3 text-[9px] tracking-[0.3em] font-semibold text-gray-400'>
           BUILD / LEARN / GROW

@@ -68,7 +68,7 @@ const About = () => {
 
       <motion.div
         initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
+        whileInView={{ opacity: 1 }}
         viewport={{ once: false }}
         transition={{ duration: 0.8, delay: 1.1 }}
         className='relative sm:absolute bottom-6 left-5 right-5 sm:left-10 sm:right-10 border-t border-gray-200 pt-4 mt-8 sm:mt-0'

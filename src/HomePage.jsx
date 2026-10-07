@@ -1,5 +1,10 @@
 import { motion } from 'framer-motion';
 import { ArrowDown, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import Lists from './Lists';
+import Footer from './Footer';
+
+const MotionLink = motion.create(Link);
 
 const containerVariants = {
   hidden: {}, 
@@ -37,12 +42,12 @@ const HomePage = () => {
         <motion.div 
         variants={itemVariants} 
         className='flex flex-col sm:flex-row gap-3 sm:gap-5 pt-3'>
-         <motion.a href="#projects" whileHover={{ y: -2, opacity: 0.85 }} whileTap={{ scale: 0.97 }} transition={{ duration: 0.2 }}
+         <MotionLink to="/projects" whileHover={{ y: -2, opacity: 0.85 }} whileTap={{ scale: 0.97 }} transition={{ duration: 0.2 }}
          className='bg-black px-6 py-2 font-bold text-white text-xs rounded-2xl flex items-center justify-center gap-3 w-fit'
          >
           VIEW MY WORK
           <ArrowRight size={15} />
-         </motion.a> 
+         </MotionLink> 
 
          <motion.a href="/resume.pdf" whileHover={{ y: -2, opacity: 0.85 }} whileTap={{ scale: 0.97 }} transition={{ duration: 0.2 }} target="_blank" rel="noopener noreferrer"
           className='px-6 py-2 font-bold text-xs rounded-2xl flex items-center justify-center gap-3 border-black border w-fit'
@@ -123,6 +128,9 @@ const HomePage = () => {
        </motion.p>
       </div>
      </motion.div>
+
+     <Lists/>
+     <Footer/>
 
     </div>
 

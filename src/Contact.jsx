@@ -25,7 +25,7 @@ const itemVariants = {
 
 const Contact = () => {  
   return (  
-    <div id='contact' className='relative px-10 pt-34 text-black h-screen'>
+    <div id='contact' className='relative px-5 sm:px-10 pt-28 sm:pt-34 text-black min-h-screen overflow-hidden'>
       <motion.div
         className='space-y-2'
         variants={containerVariants}
@@ -34,8 +34,8 @@ const Contact = () => {
         viewport={{ once: false, amount: 0.25 }}
       >  
        <motion.p variants={itemVariants} className='tracking-widest text-xs font-semibold'>GET IN TOUCH</motion.p>
-       <motion.p variants={itemVariants} className='text-5xl font-bold leading-none'>Let's build</motion.p>
-       <motion.p variants={itemVariants} className='text-5xl font-bold leading-none'>something together.</motion.p>
+       <motion.p variants={itemVariants} className='text-4xl sm:text-5xl font-bold leading-none'>Let's build</motion.p>
+       <motion.p variants={itemVariants} className='text-4xl sm:text-5xl font-bold leading-none'>something together.</motion.p>
        <motion.div variants={itemVariants} className='h-0.5 w-8 bg-black mt-4'></motion.div>
 
        <motion.div variants={itemVariants} className='mt-4 text-sm'>
@@ -47,7 +47,7 @@ const Contact = () => {
         <div className='flex items-center gap-4'>
         <FaEnvelope size={15} />
         <p className='text-gray-500 font-semibold w-16'>EMAIL</p>
-        <a href='mailto:kirolasakshi@gmail.com' className='hover:underline cursor-pointer'>
+        <a href='mailto:kirolasakshi@gmail.com' className='hover:underline cursor-pointer break-all sm:break-normal'>
           kirolasakshi@gmail.com
         </a>
         </div>
@@ -56,7 +56,7 @@ const Contact = () => {
         <FaLinkedin size={15} />
         <p className='text-gray-500 font-semibold w-16'>LINKEDIN</p>
         <a href='https://www.linkedin.com/in/sakshi-kirola-24797232b' target='_blank' rel='noopener noreferrer'
-         className='hover:underline cursor-pointer'
+         className='hover:underline cursor-pointer break-all sm:break-normal'
         >
          linkedin.com/in/sakshi-kirola 
         </a> 
@@ -66,7 +66,7 @@ const Contact = () => {
         <FaGithub size={15} />
         <p className='text-gray-500 font-semibold w-16'>GITHUB</p>
         <a href='https://github.com/Sakshikirola' target='_blank' rel='noopener noreferrer'
-         className='hover:underline cursor-pointer'
+         className='hover:underline cursor-pointer break-all sm:break-normal'
         >
          github.com/Sakshikirola
         </a>
@@ -88,9 +88,9 @@ const Contact = () => {
       <motion.div
         initial={{ opacity: 0, x: 24 }}
         whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true, amount: 0.25 }}
+        viewport={{ once: false, amount: 0.25 }}
         transition={{ duration: 1, delay: 0.2, ease: 'easeOut' }}
-        className='absolute right-10 top-50 text-[7rem] font-extrabold leading-[0.85] text-gray-200 tracking-tight text-right pointer-events-none'
+        className='hidden sm:block absolute right-10 top-50 text-5xl sm:text-[7rem] font-extrabold leading-[0.85] text-gray-200 tracking-tight text-right pointer-events-none'
       >
          <p>CONTACT</p>
       </motion.div>
@@ -100,7 +100,7 @@ const Contact = () => {
         whileInView={{ opacity: 1 }}
         viewport={{ once: false }}
         transition={{ duration: 0.8, delay: 0.8 }}
-        className='absolute bottom-4 left-10 right-10 border-t border-gray-200 pt-4'
+        className='relative sm:absolute bottom-auto sm:bottom-4 left-5 right-5 sm:left-10 sm:right-10 border-t border-gray-200 pt-4 mt-10 sm:mt-0'
       >
        <p className='absolute left-1/2 -translate-x-1/2 -top-2 bg-white px-3 text-[9px] tracking-[0.3em] font-semibold text-gray-400'>
         BUILD / LEARN / GROW
