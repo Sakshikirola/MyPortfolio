@@ -20,6 +20,7 @@ const itemVariants = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' } },
 }; 
 
+
 const HomePage = () => {
   return (
     <div id='home' className='relative px-5 sm:px-10 pt-24 text-black overflow-hidden'>
